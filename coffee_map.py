@@ -78,8 +78,6 @@ def main():
     your_place = input("Где вы находитесь?: ")
     your_coords = fetch_coordinates(apikey, your_place)
 
-    print('Ваши координаты: ', your_coords)
-
     coffee_distances = cof_dist(data, your_coords)
     closest_coffee = near(coffee_distances)
     create_map(your_coords, closest_coffee)
